@@ -39,7 +39,6 @@ class Github562Test {
     @Test
     fun testDeserHit562() {
         val value: Request = jackson.readValue(json, Request::class.java)
-        // Fixed
         assertEquals(3, value.additionProperties!!.size)
     }
 
